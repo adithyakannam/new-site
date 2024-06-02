@@ -1,0 +1,355 @@
+* , *::before, *::after {   
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container { 
+    /* background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+section {
+    height: 100vh;
+    width: 100vw;
+    padding: 80px 20px 40px 10px;
+}
+/* navigation bar */
+a {
+    text-decoration: none;
+    color: white;
+} 
+header {
+    width: 100vw;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 20px 0 20px ;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: #3d52a0;
+    color: white;
+}
+header > a {
+    font-family: play-fair ;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+nav {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ol {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+ol > li {
+    padding-right: 20px;
+    font-size: .9rem;
+}
+ol > li:hover {
+    text-decoration: underline;
+}
+
+/* home */
+.home {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-size: 20rem;
+    font-style: normal;
+}
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul > li {
+    display: inline-block;
+}
+.triangle{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-bottom: 15px solid rgb(255, 134, 5);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.triangle1{
+    top: 1%;
+    left: 20%;
+    rotate: 20deg;
+}
+.triangle2{
+    bottom: 25%;
+    left: 35%;
+    rotate: 40deg;
+}
+.triangle3{
+    bottom: 80%;
+    left: 80%;
+    rotate: -20deg;
+}
+.triangle4{
+    top: 15%;
+    left: 95%;
+    rotate: -42deg;
+}
+.triangle5{
+    bottom: 20%;
+    left: 10%;
+    rotate: 69deg;
+}
+.triangle6{
+    top: 20%;
+    left: 10%;
+    rotate: 78deg;
+}
+.triangle7{
+    bottom: 5%;
+    left: 55%;
+    rotate: 43deg;
+}
+.triangle8{
+    bottom: 80%;
+    left: 50%;
+    rotate: -30deg;
+}
+.triangle9{
+    top: 26%;
+    right: 34%;
+    rotate: 19deg;
+}
+.triangle10{
+    bottom: 20%;
+    right: 13%;
+    rotate: 75deg;
+}
+/* about section */
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+    .about-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .box {
+        width: 20%;
+        height: 90%;
+    }
+    .box1{
+        height: 90%;
+        width: 25%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+        z-index: -1;
+        overflow: hidden;
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+    }
+    .box2 {
+        width: 40%;
+        height: 60%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1rem;
+        padding: 10px;
+        text-align: justify;
+        line-height: 1.8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        text-transform: uppercase;
+        text-decoration: underline;
+        margin-bottom: 30px;
+    }
+
+    .triangle11 {
+        rotate: 25deg;
+        left: 12%;
+        top:45%;
+    }
+    .triangle12 {
+        rotate: 45deg;
+        right: 18%;
+        top:23%;
+    }
+    .triangle13 {
+        rotate: 75deg;
+        bottom: 18%;
+        right:43%;
+    }
+/* footer */
+footer {
+    height: 15vh;
+    width: 100vw;
+    background-color: #222629;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.details {
+    width: 20%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+i {
+    color: white;
+}
+i:hover {
+    color: rgb(178, 177, 176);
+}
+footer p {
+    font-size: .9rem;
+}
+#fun {
+    font-size: .8rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 0;
+    }
+    header nav{
+        display: none;
+    }
+    header a {
+        font-family: play-fair ;
+    }
+    .home {
+        font-size: 5rem;
+    }
+    #letters {
+        flex-direction: column;
+        text-align: center;
+    }
+    #letters li {
+        display: none;
+    }
+    #letters::before {
+        content: 'A D I T H Y A';
+        display: block;
+        font-size: 3rem;
+        text-align: center;
+        animation: fade1 2.5s forwards;
+       
+    }
+    #letters::after {
+        content:'K A N N A M';
+        display: block;
+        font-size: 3rem;
+        text-align: center;
+        animation: fade1 2.5s  forwards;
+    }
+    .triangle1 {
+        top:25%;
+    }
+    .triangle2{
+        top: 70%;
+    }
+    .triangle3{
+        top: 50%;
+    }
+    .triangle4{
+        left: 40%;
+        top: 46%;
+    }
+    .triangle6 {
+        top: 55%;
+        left: 10%;
+    }
+    .triangle7 {
+        bottom: 0;
+    }
+    .triangle9 {
+        right: 15%;
+    }
+    .triangle11 {
+        top: 55%;
+    }
+    .about {
+        height: 140vh;
+    }
+    .about-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .box1 {
+        width: 90%;
+        height: 550px;
+        padding: 0;
+    }
+    .box2 {
+        width: 90%;
+        height: 450px;
+        padding: 0;
+    }
+
+   
+    footer {
+        margin-top:30px ;
+        
+    }
+    footer .details {
+        width: 100%;
+    }
+    @keyframes fade1 {
+        0%{
+            opacity: 0;
+        }
+        25%{
+            opacity: .25;
+        }
+        50% {
+            opacity: .5;
+        }
+        75%{
+            opacity: .75;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+}
