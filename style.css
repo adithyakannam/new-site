@@ -185,7 +185,7 @@ ul > li {
         width: 40%;
         height: 60%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 10px;
         text-align: justify;
         line-height: 1.8;
@@ -311,29 +311,25 @@ footer p {
     .about {
         height: 140vh;
     }
-    .about-container{
+   .about-container {
         flex-direction: column;
-        padding: 0;
+        padding:0;
     }
-    .box1 {
+    .box1{
         width: 90%;
-        height: 550px;
-        padding: 0;
     }
-    .box2 {
-        width: 90%;
-        height: 450px;
-        padding: 0;
+    .box2{
+        width: 100%;
     }
-
-   
     footer {
-        margin-top:30px ;
+        margin-top:90px ;
+        bottom: 0;
         
     }
     footer .details {
         width: 100%;
     }
+    
     @keyframes fade1 {
         0%{
             opacity: 0;
