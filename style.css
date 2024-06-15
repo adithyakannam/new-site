@@ -185,7 +185,7 @@ ul > li {
         width: 40%;
         height: 90%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         padding: 10px;
         text-align: justify;
         line-height: 1.8;
@@ -308,21 +308,25 @@ footer p {
     .triangle11 {
         top: 55%;
     }
-    .about {
-        height: 140vh;
+     .about {
+        height: max-content;
     }
-   .about-container {
+
+    .about-container {
         flex-direction: column;
-        padding:0;
+        width: 100%;
+        height: 100%;
     }
     .box1{
         width: 90%;
+        height: 40%;
     }
     .box2{
-        width: 100%;
-        height:100%;
+        width: 95%;
+        height: 60%;
         font-size:1rem;
     }
+   
     footer {
         margin-top:90px ;
         position:relative;
